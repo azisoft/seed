@@ -1,0 +1,7 @@
+git clone https://github.com/azisoft/simple.git
+
+git remote add origin https://github.com/azisoft/simple.git
+git remote -v
+git remote set-url origin https://github.com/azisoft/simple.git
+
+git commit -m "comment"
