@@ -9,7 +9,6 @@ export class NewService {
     constructor(private factory : ApiFactory) {}
 
     getNewData() : NewData {
-      let json = this.factory.getData('new_data');
-      return JSON.parse(json.toString());
+      return this.factory.getData('new_data');
     }
 }

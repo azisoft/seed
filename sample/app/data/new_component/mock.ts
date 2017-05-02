@@ -1,6 +1,6 @@
 import { NewData } from '../../new/new.newdata.data';
 
-export function GetData() : NewData {
+export function GetNewData() : NewData {
     return new NewData(
       'Angular Seed is a starter project that implements best practices in coding, building and testing Angular apps.',
       '<h2>Gezukam draga - from mock</h2>',

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+
 import { NewService } from './new.service';
+import { ApiFactory } from '../api.factory'
 import { NewData } from './new.newdata.data';
 
 /**
@@ -7,7 +9,7 @@ import { NewData } from './new.newdata.data';
  */
 @Component({
   moduleId: module.id,
-  providers: [NewService],
+  providers: [NewService,ApiFactory],
   selector: 'sd-new',
   templateUrl: 'new.component.html',
   styleUrls: ['new.component.css']
