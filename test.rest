@@ -1,0 +1,7 @@
+GET http://localhost:6002/API/api/new
+PUT http://localhost:6002/API/api/new
+POST  http://localhost:6002/API/api/new
+DELETE http://localhost:6002/API/new
+
+
+GET http://azisoft-api.azurewebsites.net/api/new

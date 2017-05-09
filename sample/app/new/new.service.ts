@@ -8,7 +8,7 @@ import { ApiFactory } from '../api.factory'
 export class NewService {
     constructor(private factory : ApiFactory) {}
 
-    getNewData() : NewData {
+    getNewData() : Promise<NewData> {
       return this.factory.getData('new_data');
     }
 }

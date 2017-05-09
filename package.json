@@ -128,8 +128,9 @@
     "tildify": "^1.2.0",
     "traceur": "^0.0.111",
     "ts-node": "^2.0.0",
+    "tsc": "^1.20150623.0",
     "tslint": "^5.0.0",
-    "typescript": "^2.2.0",
+    "typescript": "^2.3.2",
     "walk": "^2.3.9",
     "yargs": "^6.0.0"
   },
@@ -144,8 +145,10 @@
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
     "@angular/service-worker": "^1.0.0-beta.6",
+    "@types/lodash": "^4.14.64",
     "core-js": "^2.4.1",
     "intl": "^1.2.5",
+    "lodash": "^4.17.4",
     "rxjs": "^5.2.0",
     "systemjs": "0.19.41",
     "zone.js": "^0.8.4"

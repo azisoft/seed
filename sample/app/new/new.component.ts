@@ -18,6 +18,6 @@ export class NewComponent {
   newData : NewData;
 
   constructor(newService: NewService) {
-      this.newData = newService.getNewData();
+      newService.getNewData().then(nd => this.newData = nd);
   }
 }

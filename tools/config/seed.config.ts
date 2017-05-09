@@ -419,6 +419,10 @@ export class SeedConfig {
       '*': 'node_modules/*'
     },
     packages: {
+      'lodash': { main:'index.js', defaultExtension:'js' }
+    },
+    map: {
+      'lodash': 'lodash'
     }
   };
 
