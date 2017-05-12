@@ -1,6 +1,6 @@
 import * as _ from 'lodash'
 
-enum Verb{
+export enum Verb{
     GET,
     POST,
     PUT,
@@ -8,7 +8,8 @@ enum Verb{
 }
 
 export class ApiMapItem {
-    constructor(public key: string, public verb: Verb, public url: string, public method: string, public params: [string,string][]){}
+    constructor(private key: string, public verb: Verb, public url: string, public method: string){ }
+    public is(key: string) : boolean { return this.key == key; }
 }
 
 export class ApiMap {
@@ -16,13 +17,16 @@ export class ApiMap {
     private _map: ApiMapItem[]  = buildMap();
     
     constructor(key: string, apiUrl: string){
-        this.item = _.find(this._map, function(i) { return i.key == key });
+        this.item = _.find(this._map, (i) => i.is(key) );
         this.item.url = this.item.url || apiUrl;
     }
 }
 
-function buildMap() :  ApiMapItem[]{
+function buildMap() :  ApiMapItem[] {
     return [
-        new ApiMapItem('new_data', Verb.GET, null, '/api/new', [])
+        new ApiMapItem('new_data', Verb.GET, null, '/api/new'),
+        new ApiMapItem('test_POST', Verb.POST, null, '/api/create'),
+        new ApiMapItem('test_PUT', Verb.POST, null, '/api/update'),
+        new ApiMapItem('test_DELETE', Verb.POST, null, '/api/delete')
     ];
 }

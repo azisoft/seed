@@ -9,6 +9,6 @@ export class NewService {
     constructor(private factory : ApiFactory) {}
 
     getNewData() : Promise<NewData> {
-      return this.factory.getData('new_data');
+      return this.factory.getData('new_data', {});
     }
 }
