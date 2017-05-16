@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Config } from './config'
-import { Http, Headers } from '@angular/http';
+import { Http, Headers, URLSearchParams } from '@angular/http';
 import { Verb } from './data/api.map';
 
 import 'rxjs/add/operator/toPromise';
@@ -33,7 +33,8 @@ export class ApiFactory {
             case Verb.GET:
             {
                 let params: URLSearchParams = this.objToSearchParams(parameters);
-                return this.http.get(item.item.url + item.item.method)
+                console.log(params);
+                return this.http.get(item.item.url + item.item.method, {search: params })
                     .toPromise()
                     .then(res => res.json())
                     .catch(this.handleError);

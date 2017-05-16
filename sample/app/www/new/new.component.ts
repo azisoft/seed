@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { NewService } from './new.service';
-import { ApiFactory } from '../api.factory'
+import { ApiFactory } from '../../api.factory'
 import { NewData } from './new.newdata.data';
 
 /**

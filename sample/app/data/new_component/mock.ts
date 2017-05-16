@@ -1,4 +1,4 @@
-import { NewData } from '../../new/new.newdata.data';
+import { NewData } from '../../www/new/new.newdata.data';
 
 export function GetNewData() : NewData {
     return new NewData(

@@ -5,10 +5,10 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
-import { AboutModule } from './about/about.module';
-import { NewModule } from './new/new.module';
-import { HomeModule } from './home/home.module';
-import { SharedModule } from './shared/shared.module';
+import { AboutModule } from './www/about/about.module';
+import { NewModule } from './www/new/new.module';
+import { HomeModule } from './www/home/home.module';
+import { SharedModule } from './www/shared/shared.module';
 
 
 @NgModule({
